@@ -15,11 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let label: UILabel = UILabel.appearance();
-        label.defaultFont = UIFont.systemFont(ofSize: 17)
-        
-        let bar:UINavigationBar =  UINavigationBar.appearance();
-        bar.barTintColor = UIColor.red
+        UILabel.appearance().defaultFont = UIFont.systemFont(ofSize: 25)
         
         return true
     }
