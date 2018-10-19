@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        UILabel.appearance().defaultFont = UIFont.systemFont(ofSize: 25)
+        
+        UILabel.appearance().defaultFont = UIFont.systemFont(ofSize: 17)
         
         return true
     }

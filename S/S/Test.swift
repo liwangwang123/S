@@ -20,7 +20,7 @@ extension CGFloat {
      
      */
     var dp: CGFloat {
-        return (self / 320) * UIScreen.main.bounds.width
+        return (self / 375) * UIScreen.main.bounds.width
     }
 }
 
@@ -33,6 +33,11 @@ extension UILabel{
              and appear each time, the font label will decrease
              till will disappear, so we need to call dp just one
              time for each label .*/
+            
+            guard let font = self.font else {
+                return
+            }
+            print(font)
             if self.tag == 0 {  // self.tag = 0 is default value .
                 self.tag = 1
                 let newFontSize = self.font.pointSize.dp // we get old font size and adaptive it with multiply it with dp.
